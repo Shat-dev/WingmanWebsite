@@ -1,0 +1,162 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+  padding: 8rem 0 6rem;
+  text-align: center;
+  flex: 1;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto 0;
+  max-width: 100%;
+}
+
+.hero-image img {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.hero-description {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* Info Section */
+.info {
+  padding: 4rem 0;
+  background-color: #fafafa;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: auto;
+}
+
+.footer-text {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .hero {
+    padding: 5rem 0 4rem;
+  }
+
+  .info {
+    padding: 3rem 0;
+  }
+
+  .info-grid {
+    gap: 2rem;
+  }
+
+  .header {
+    padding: 1.5rem 0;
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
