@@ -48,15 +48,72 @@ h1.logo {
   font-weight: 700;
   letter-spacing: -0.04em;
   color: #1a1a1a;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
-.hero-subtitle {
-  font-size: clamp(1.25rem, 3vw, 2rem);
+.hero-value-prop {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 400;
   color: #666;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
+}
+
+.cta-primary {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+  letter-spacing: -0.01em;
+}
+
+.cta-primary:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.cta-secondary {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background-color: transparent;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  letter-spacing: -0.01em;
+}
+
+.cta-secondary:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.hero-compliance {
+  font-size: 0.875rem;
+  color: #888;
+  font-weight: 300;
+  margin-bottom: 3rem;
   letter-spacing: -0.01em;
 }
 
@@ -65,29 +122,7 @@ h1.logo {
   color: #888;
   font-weight: 300;
   max-width: 700px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
-  letter-spacing: -0.01em;
-}
-
-.about-section {
-  max-width: 600px;
-  margin: 0 auto 3rem;
-  text-align: center;
-}
-
-.about-heading {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  font-weight: 500;
-  color: #666;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.01em;
-}
-
-.about-text {
-  font-size: clamp(0.875rem, 1.5vw, 1rem);
-  color: #888;
-  font-weight: 300;
+  margin: 3rem auto 0;
   line-height: 1.6;
   letter-spacing: -0.01em;
 }
@@ -105,6 +140,103 @@ h1.logo {
   height: auto;
   display: block;
   border-radius: 8px;
+}
+
+/* Features Section */
+.features {
+  padding: 6rem 0;
+  background-color: #fafafa;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 0.75rem;
+  font-weight: 300;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* How it works Section */
+.how-it-works {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0;
 }
 
 .hero-description {
@@ -297,11 +429,21 @@ h1.logo {
     padding: 5rem 0 4rem;
   }
 
-  .info {
-    padding: 3rem 0;
+  .features {
+    padding: 4rem 0;
   }
 
-  .info-grid {
+  .how-it-works {
+    padding: 4rem 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
@@ -327,9 +469,23 @@ h1.logo {
     padding: 4rem 0 3rem;
   }
 
-  .info-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+  .features {
+    padding: 3rem 0;
+  }
+
+  .how-it-works {
+    padding: 3rem 0;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    max-width: 300px;
   }
 
   .legal-page {
