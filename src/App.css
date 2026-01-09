@@ -22,6 +22,18 @@
   font-weight: 600;
   letter-spacing: -0.02em;
   color: #1a1a1a;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #1a1a1a;
+  opacity: 0.8;
+}
+
+h1.logo {
+  margin: 0;
 }
 
 /* Hero Section */
@@ -156,6 +168,15 @@
   gap: 0.5rem;
 }
 
+.footer-legal-links {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .footer-link {
   color: #888;
   font-size: 0.9rem;
@@ -179,6 +200,91 @@
   font-size: 0.9rem;
   font-weight: 300;
   margin: 0;
+  margin-top: 1rem;
+}
+
+/* Legal Pages */
+.legal-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  text-align: left;
+}
+
+.legal-page h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.last-updated {
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.legal-page section {
+  margin-bottom: 3rem;
+}
+
+.legal-page h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.legal-page h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.legal-page h4 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.legal-page p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.legal-page ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.legal-page li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.legal-page a {
+  color: #666;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.legal-page a:hover {
+  color: #1a1a1a;
 }
 
 /* Responsive */
@@ -206,6 +312,10 @@
   .footer {
     padding: 2rem 0;
   }
+
+  .legal-page {
+    padding: 3rem 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -220,6 +330,18 @@
   .info-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .legal-page {
+    padding: 2rem 0;
+  }
+
+  .legal-page h1 {
+    font-size: 1.75rem;
+  }
+
+  .legal-page h2 {
+    font-size: 1.5rem;
   }
 }
 
