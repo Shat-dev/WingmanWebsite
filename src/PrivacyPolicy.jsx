@@ -18,12 +18,7 @@ function PrivacyPolicy() {
           <div className="legal-page">
             <h1>Privacy Policy</h1>
             <p className="last-updated">
-              Last Updated:{" "}
-              {new Date().toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+              Last Updated: February 12, 2026
             </p>
 
             <section>
@@ -78,6 +73,21 @@ function PrivacyPolicy() {
                 premium features.
               </p>
 
+              <h4>App Tracking Transparency and Tracking</h4>
+              <p>
+                Wingman does <strong>not</strong> use tracking across apps and
+                websites owned by other companies. We do not access the
+                advertising identifier (IDFA) or use any other identifier for
+                cross-app or cross-website tracking purposes. Because we do not
+                engage in such tracking, we do not present the App Tracking
+                Transparency (ATT) prompt. Any analytics we use are limited to
+                improving our own app and services and do not involve tracking
+                you across other companies' apps or sites. If we were to
+                introduce tracking that would require ATT in the future, we
+                would present the system prompt and provide clear opt-out
+                options in accordance with Apple's guidelines.
+              </p>
+
               <h3>How We Use Your Information</h3>
               <p>We use the information we collect to:</p>
               <ul>
@@ -90,6 +100,47 @@ function PrivacyPolicy() {
                 <li>Monitor and analyze usage patterns and trends</li>
                 <li>Detect, prevent, and address technical issues</li>
               </ul>
+
+              <h3>Data Retention</h3>
+              <p>
+                We retain your information only for as long as necessary to
+                fulfill the purposes described in this Privacy Policy and to
+                comply with legal obligations. Our retention practices are as
+                follows:
+              </p>
+              <ul>
+                <li>
+                  <strong>Account information:</strong> We retain your account
+                  data (such as email and profile information) while your
+                  account is active. After you request account deletion, we
+                  remove or anonymize this data promptly, typically within 30
+                  days, except where we must retain it for a limited period for
+                  legal, regulatory, or legitimate business purposes (such as
+                  backup systems or resolving disputes). Once no longer needed,
+                  it is securely deleted or anonymized.
+                </li>
+                <li>
+                  <strong>Usage analytics:</strong> We retain usage and
+                  analytics data for a limited period (typically up to 24
+                  months) to improve our services, analyze trends, and fix
+                  issues. After this period, data is deleted or aggregated in
+                  a form that no longer identifies you.
+                </li>
+                <li>
+                  <strong>Subscription information:</strong> We retain
+                  subscription-related data as needed to manage your
+                  subscription and for a reasonable period after cancellation
+                  for accounting, tax, or legal requirements, after which it is
+                  deleted or anonymized.
+                </li>
+              </ul>
+              <p>
+                When retention periods expire or you request deletion, we delete
+                or anonymize your data unless we are required to retain it by
+                law (for example, in response to a legal hold or regulatory
+                request). Deletion requests you submit are processed promptly
+                subject to these exceptions.
+              </p>
             </section>
 
             <section>
@@ -116,8 +167,12 @@ function PrivacyPolicy() {
                 <li>
                   <strong>Service Providers:</strong> We may share information
                   with third-party service providers who perform services on our
-                  behalf, such as analytics providers, subject to
-                  confidentiality agreements.
+                  behalf, such as analytics providers. We require all such
+                  providers to handle your data in accordance with this Privacy
+                  Policy, applicable privacy laws, and to provide the same or
+                  equivalent level of protection as we do. Our agreements with
+                  these providers include confidentiality and data protection
+                  obligations to safeguard your information.
                 </li>
                 <li>
                   <strong>Legal Requirements:</strong> We may disclose your
@@ -159,8 +214,28 @@ function PrivacyPolicy() {
                 </li>
                 <li>
                   <strong>Deletion:</strong> You can request deletion of your
-                  account and associated data by contacting us at
-                  support@getwingman.app.
+                  account and associated data by contacting us at{" "}
+                  <a href="mailto:support@getwingman.app">
+                    support@getwingman.app
+                  </a>
+                  . We will process deletion requests promptly in line with our
+                  Data Retention section, except where we must retain data for
+                  legal holds or other lawful reasons, which we will explain if
+                  applicable.
+                </li>
+                <li>
+                  <strong>Withdrawal of consent:</strong> Where we process your
+                  data based on your consent, you may withdraw that consent at
+                  any time. You can do so through in-app settings where
+                  available, or by contacting us at{" "}
+                  <a href="mailto:support@getwingman.app">
+                    support@getwingman.app
+                  </a>
+                  . Upon withdrawal, we will stop the relevant processing. Withdrawing
+                  consent may limit or prevent use of certain features that
+                  depend on that data. You may also request account deletion (as
+                  above), which will result in removal of your data as described
+                  in our Data Retention section.
                 </li>
                 <li>
                   <strong>Subscription Management:</strong> You can manage your

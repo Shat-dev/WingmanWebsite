@@ -106,9 +106,17 @@ function TermsAndConditions() {
               <h3>Refunds</h3>
               <p>
                 Refund requests are handled by Apple in accordance with Apple's
-                refund policy. We do not process refunds directly. If you have
-                questions about refunds, please contact Apple Support or us at
-                support@getwingman.app.
+                refund policy. We do not process refunds directly. Our
+                subscription and refund practices comply with Apple's App Store
+                policies and Australian Consumer Law; where a refund is required
+                by law (including under the ACL), you may be entitled to a
+                remedy. We encourage you to review Apple's terms and conditions
+                for payments and refunds. If you have questions about refunds,
+                please contact Apple Support or us at{" "}
+                <a href="mailto:support@getwingman.app">
+                  support@getwingman.app
+                </a>
+                .
               </p>
 
               <h3>Price Changes</h3>
@@ -133,10 +141,7 @@ function TermsAndConditions() {
 
             <section>
               <h2>User Responsibilities</h2>
-              <p>
-                You agree to use Wingman only for lawful purposes and in
-                accordance with these Terms. You agree not to:
-              </p>
+              <p>You agree to use Wingman only for lawful purposes and in</p>
               <ul>
                 <li>
                   Use the App in any way that violates applicable laws or
@@ -264,12 +269,35 @@ function TermsAndConditions() {
                 including if you breach these Terms. Upon termination, your
                 right to use the App will cease immediately.
               </p>
+              <h3>Account Deletion</h3>
               <p>
-                You may terminate your account at any time by deleting the App
+                You may request deletion of your account and associated personal
+                data at any time. You can initiate account deletion directly
+                within the App, or through a clear in-app process that may
+                direct you to our support channel if needed. Upon deletion, we
+                will remove your account and personal data except where we are
+                legally required to retain it (for example, for legal, tax, or
+                compliance reasons). For details on what data we retain and how
+                we handle deletion, please see our{" "}
+                <Link to="/privacy-policy">Privacy Policy</Link>.
+              </p>
+              <p>
+                <strong>Active subscriptions:</strong> Account deletion does not
+                automatically cancel your subscription or stop billing. To avoid
+                continued charges, you must cancel your subscription through
+                your Apple ID account settings before or when you request
+                account deletion. We cannot cancel subscriptions on your behalf.
+              </p>
+              <p>
+                Once your account is deleted, your access to the App and its
+                features ceases immediately. Termination or deletion of your
+                account does not relieve you of any obligations to pay fees
+                accrued prior to termination.
+              </p>
+              <p>
+                You may also terminate your use at any time by deleting the App
                 from your device and canceling your subscription through your
-                Apple ID account settings. Termination of your account does not
-                relieve you of any obligations to pay fees accrued prior to
-                termination.
+                Apple ID account settings.
               </p>
             </section>
 
@@ -286,6 +314,52 @@ function TermsAndConditions() {
                 By continuing to access or use Wingman after any revisions
                 become effective, you agree to be bound by the revised Terms. If
                 you do not agree to the new Terms, you must stop using the App.
+              </p>
+            </section>
+
+            <section>
+              <h2>Severability</h2>
+              <p>
+                If any provision of these Terms is held to be invalid, illegal,
+                or unenforceable by a court of competent jurisdiction, that
+                provision shall be modified to the minimum extent necessary to
+                make it valid and enforceable, or severed if modification is not
+                possible. The remaining provisions of these Terms shall continue
+                in full force and effect.
+              </p>
+            </section>
+
+            <section>
+              <h2>No Waiver</h2>
+              <p>
+                Our failure to enforce any right or provision of these Terms
+                shall not constitute a waiver of such right or provision. Any
+                waiver must be in writing and signed by us to be effective.
+              </p>
+            </section>
+
+            <section>
+              <h2>Entire Agreement</h2>
+              <p>
+                These Terms, together with our Privacy Policy and any other
+                policies or guidelines we publish in connection with the App,
+                constitute the entire agreement between you and Lazul Pty Ltd
+                regarding Wingman and supersede any prior agreements,
+                understandings, or communications, whether written or oral.
+              </p>
+            </section>
+
+            <section>
+              <h2>Force Majeure</h2>
+              <p>
+                We shall not be liable for any failure or delay in performing
+                our obligations under these Terms where such failure or delay
+                results from circumstances beyond our reasonable control,
+                including but not limited to acts of God, natural disasters,
+                war, terrorism, pandemics, government actions, labour disputes,
+                or failure of third-party services (including Apple's systems).
+                We will use reasonable efforts to mitigate the effect of any
+                such event.
               </p>
             </section>
 
